@@ -3,7 +3,7 @@ import { loadData, saveData, subscribeData } from "./firebase.js";
 
 const USERS = [
   { id: "admin", username: "admin", password: "admin123", role: "admin", nama: "Administrator SIMKITA" },
-  { id: "op1", username: "operator1", password: "op123", role: "operator", nama: "Operator Bidang KUMKM" },
+  { id: "op1", username: "operator1", password: "op123", role: "operator", nama: "Operator Bidang UMKM" },
   { id: "op2", username: "operator2", password: "op456", role: "operator", nama: "Operator Bidang Koperasi" },
 ];
 
@@ -527,7 +527,7 @@ function PanduanPage() {
   return (
     <div className="fade-in" style={{maxWidth:860}}>
       <div style={{background:"linear-gradient(135deg,#0f2d5c,#1a4a8a)",borderRadius:14,padding:"22px 26px",marginBottom:22,color:"#fff"}}>
-        <h2 style={{fontSize:20,fontWeight:800}}>📖 Panduan Penggunaan SIMKITA</h2>
+        <h2 style={{fontSize:20,fontWeight:800}}>📖 Panduan Informasi SIMKITA</h2>
         <p style={{fontSize:12.5,opacity:.8,marginTop:5}}>Sistem Monitoring Kinerja Terpadu — Dinas KUMKM Prov. Sulawesi Tenggara · TA 2026</p>
       </div>
       <div style={{background:"#fff",borderRadius:12,padding:22,marginBottom:18,boxShadow:"0 2px 12px rgba(0,0,0,.06)"}}>
