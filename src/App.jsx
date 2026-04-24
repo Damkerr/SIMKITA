@@ -234,7 +234,9 @@ function LoginPage({onLogin}) {
             {loading?"Memverifikasi...":"Masuk"}
           </button>
           <div style={{marginTop:18,padding:12,background:"#f8fafc",borderRadius:8,fontSize:11.5,color:"#64748b"}}>
-            <strong style={{color:"#374151"}}>Akun Demo:</strong><br/>
+            <strong style={{color:"#374151"}}>Hasil Aktualisasi CPNS:</strong><br/>
+            Nama/Jabatan: <code>Adam Adnan Sainal, S.Ak / Perencana Ahli Pertama</code><br/>
+            NDH/Instansi: <code>022 /Dinas Koperasi dan UMKM</code>
           </div>
         </div>
       </div>
