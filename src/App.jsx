@@ -258,7 +258,7 @@ function Sidebar({active,onNav,user,onLogout,collapsed,onToggle}) {
   return (
     <div style={{width:collapsed?60:230,background:"linear-gradient(180deg,#0f2d5c,#1a4a8a)",height:"100vh",position:"fixed",left:0,top:0,display:"flex",flexDirection:"column",transition:"width .25s",zIndex:100,overflow:"hidden"}}>
       <div style={{padding:collapsed?"16px 0":"16px 14px",borderBottom:"1px solid rgba(255,255,255,.1)",display:"flex",alignItems:"center",gap:8,justifyContent:collapsed?"center":"space-between"}}>
-        {!collapsed&&<div><div style={{color:"#fff",fontSize:14,fontWeight:800}}>SIMKITA</div><div style={{color:"rgba(255,255,255,.5)",fontSize:10}}>KUMKM SULTRA 2026</div></div>}
+        {!collapsed&&<div><div style={{color:"#fff",fontSize:14,fontWeight:800}}>SIMKITA</div><div style={{color:"rgba(255,255,255,.5)",fontSize:10}}>DINAS KUMKM SULTRA 2026</div></div>}
         <button onClick={onToggle} style={{background:"rgba(255,255,255,.1)",border:"none",color:"#fff",cursor:"pointer",borderRadius:6,width:26,height:26,display:"flex",alignItems:"center",justifyContent:"center",fontSize:11,flexShrink:0}}>
           {collapsed?"→":"←"}
         </button>
