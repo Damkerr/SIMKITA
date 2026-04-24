@@ -235,8 +235,6 @@ function LoginPage({onLogin}) {
           </button>
           <div style={{marginTop:18,padding:12,background:"#f8fafc",borderRadius:8,fontSize:11.5,color:"#64748b"}}>
             <strong style={{color:"#374151"}}>Akun Demo:</strong><br/>
-            Admin: <code>admin / admin123</code><br/>
-            Operator: <code>operator1 / op123</code>
           </div>
         </div>
       </div>
