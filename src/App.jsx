@@ -29,7 +29,7 @@ const DOKUMEN_SAKIP = [
   {id:7,nama:"Cascading / Pohon Kinerja",komponen:"Perencanaan Kinerja",bobot:3,bulan:1,tw:"TW 1"},
   {id:8,nama:"Perjanjian Kinerja Eselon dan Pakta Integritas III & IV",komponen:"Perencanaan Kinerja",bobot:3,bulan:1,tw:"TW 1"},
   {id:9,nama:"LKjIP (Lap. Kinerja Inst. Pemerintah) 2027",komponen:"Pelaporan Kinerja",bobot:5,bulan:1,tw:"TW 1"},
-  {id:10,nama:"Ringkasan Eksekutif LKjIP",komponen:"Pelaporan Kinerja",bobot:2.5,bulan:1,tw:"TW 1"},
+  {id:10,nama:"Ringkasan Eksekutif LKjIP 2027",komponen:"Pelaporan Kinerja",bobot:2.5,bulan:1,tw:"TW 1"},
   {id:11,nama:"Rencana Aksi Kinerja",komponen:"Perencanaan Kinerja",bobot:2.5,bulan:2,tw:"TW 1"},
   {id:12,nama:"Dok. Identifikasi Risiko Kinerja",komponen:"Perencanaan Kinerja",bobot:3.5,bulan:2,tw:"TW 1"},
   {id:13,nama:"Tindak Lanjut Hasil Evaluasi SAKIP Tahun Lalu",komponen:"Evaluasi Internal",bobot:4,bulan:2,tw:"TW 1"},
