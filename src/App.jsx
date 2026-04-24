@@ -22,13 +22,13 @@ const RENCANA_DEFAULT = [759337891.71,985115526.22,1393673783.41,821703291.71,11
 const DOKUMEN_SAKIP = [
   {id:1,nama:"Renstra Perangkat Daerah",komponen:"Perencanaan Kinerja",bobot:4,bulan:0,tw:"TW 1"},
   {id:2,nama:"Renja (Rencana Kerja) Tahunan",komponen:"Perencanaan Kinerja",bobot:3.5,bulan:0,tw:"TW 1"},
-  {id:3,nama:"Perjanjian Kinerja Kepala OPD",komponen:"Perencanaan Kinerja",bobot:4,bulan:0,tw:"TW 1"},
+  {id:3,nama:"Perjanjian Kinerja dan Pakta Integritas Kepala OPD",komponen:"Perencanaan Kinerja",bobot:4,bulan:0,tw:"TW 1"},
   {id:4,nama:"Indikator Kinerja Utama (IKU)",komponen:"Perencanaan Kinerja",bobot:3.5,bulan:0,tw:"TW 1"},
   {id:5,nama:"DPA (Dok. Pelaksanaan Anggaran)",komponen:"Perencanaan Kinerja",bobot:3,bulan:0,tw:"TW 1"},
-  {id:6,nama:"SK Tim Evaluasi SAKIP Internal",komponen:"Evaluasi Internal",bobot:2.5,bulan:0,tw:"TW 1"},
+  {id:6,nama:"SK Tim Evaluasi SAKIP Internal 2027",komponen:"Evaluasi Internal",bobot:2.5,bulan:0,tw:"TW 1"},
   {id:7,nama:"Cascading / Pohon Kinerja",komponen:"Perencanaan Kinerja",bobot:3,bulan:1,tw:"TW 1"},
-  {id:8,nama:"Perjanjian Kinerja Eselon III & IV",komponen:"Perencanaan Kinerja",bobot:3,bulan:1,tw:"TW 1"},
-  {id:9,nama:"LKjIP (Lap. Kinerja Inst. Pemerintah)",komponen:"Pelaporan Kinerja",bobot:5,bulan:1,tw:"TW 1"},
+  {id:8,nama:"Perjanjian Kinerja Eselon dan Pakta Integritas III & IV",komponen:"Perencanaan Kinerja",bobot:3,bulan:1,tw:"TW 1"},
+  {id:9,nama:"LKjIP (Lap. Kinerja Inst. Pemerintah) 2027",komponen:"Pelaporan Kinerja",bobot:5,bulan:1,tw:"TW 1"},
   {id:10,nama:"Ringkasan Eksekutif LKjIP",komponen:"Pelaporan Kinerja",bobot:2.5,bulan:1,tw:"TW 1"},
   {id:11,nama:"Rencana Aksi Kinerja",komponen:"Perencanaan Kinerja",bobot:2.5,bulan:2,tw:"TW 1"},
   {id:12,nama:"Dok. Identifikasi Risiko Kinerja",komponen:"Perencanaan Kinerja",bobot:3.5,bulan:2,tw:"TW 1"},
@@ -235,9 +235,9 @@ function LoginPage({onLogin}) {
             {loading?"Memverifikasi...":"Masuk"}
           </button>
           <div style={{marginTop:18,padding:12,background:"#f8fafc",borderRadius:8,fontSize:11.5,color:"#64748b"}}>
-            <strong style={{color:"#374151"}}>Akun Demo:</strong><br/>
-            Admin: <code>admin / admin123</code><br/>
-            Operator: <code>operator1 / op123</code>
+            <strong style={{color:"#374151"}}>Hasil Aktualisasi CPNS:</strong><br/>
+            Nama: <code>Adam Adnan Sainal, S.Ak / 022</code><br/>
+            Angkatan: <code>VII / 3</code>
           </div>
         </div>
       </div>
@@ -397,7 +397,7 @@ function InputPage({data,onSave,user}) {
                 <th style={{minWidth:100}}>IKU-3 Koperasi Berkualitas (%)</th>
                 <th style={{minWidth:100}}>IKU-4 Usaha Kecil ke Formal (%)</th>
                 <th style={{minWidth:100}}>IKU-5 Pertumb. Wirausaha (%)</th>
-                <th style={{minWidth:130}}>Rencana Anggaran (Rp) {isAdmin?"✏️":"🔒"}</th>
+                <th style={{minWidth:130}}>Rencana Anggaran (DPA) (Rp) {isAdmin?"✏️":"🔒"}</th>
                 <th style={{minWidth:150}}>Realisasi Anggaran (Rp)</th>
               </tr></thead>
               <tbody>{ld.iku.map((row,i)=>(
@@ -561,7 +561,7 @@ function PanduanPage() {
         <div style={{padding:"13px 18px",background:"#1a4a8a",color:"#fff",fontSize:13,fontWeight:700}}>D. IKU — Dinas KUMKM Sultra 2026</div>
         <table><thead><tr><th>#</th><th>Indikator</th><th>Target</th><th>Formula</th></tr></thead>
         <tbody>
-          {[[1,"Rasio Volume Usaha Koperasi terhadap PDRB","0.80%","Vol. Usaha Koperasi ÷ PDRB Wilayah × 100%"],[2,"Rasio Kewirausahaan","2.25%","∑ Wirausahawan ÷ ∑ Penduduk Usia Produktif × 100%"],[3,"Persentase Koperasi yang Berkualitas","70.00%","∑ Koperasi RAT ÷ ∑ Total Koperasi × 100%"],[4,"Persentase Usaha Kecil dari Informal ke Formal","5.00%","∑ Usaha Kecil ber-NIB ÷ ∑ Total Usaha Kecil × 100%"],[5,"Persentase Pertumbuhan Kewirausahaan","—","∑(Wirausaha Pemula + Mapan) ÷ ∑ Angkatan Kerja × 100%"]].map(([no,ind,target,formula])=>(
+          {[[1,"Rasio Volume Usaha Koperasi terhadap PDRB","0.80%","∑ Vol. Usaha Koperasi ÷ ∑ PDRB Wilayah × 100%"],[2,"Rasio Kewirausahaan","2.25%","∑ Wirausahawan ÷ ∑ Penduduk Usia Produktif × 100%"],[3,"Persentase Koperasi yang Berkualitas","70.00%","∑ Koperasi RAT ÷ ∑ Total Koperasi × 100%"],[4,"Persentase Usaha Kecil dari Informal ke Formal","5.00%","∑ Usaha Kecil ber-NIB ÷ ∑ Total Usaha Kecil × 100%"],[5,"Persentase Pertumbuhan Kewirausahaan","—","∑(Wirausaha Pemula + Mapan) ÷ ∑ Angkatan Kerja × 100%"]].map(([no,ind,target,formula])=>(
             <tr key={no}><td style={{fontWeight:700,color:"#1a4a8a"}}>{no}</td><td style={{fontWeight:600,fontSize:12}}>{ind}</td><td style={{fontWeight:700,color:"#1e8449"}}>{target}</td><td style={{fontSize:11.5,color:"#64748b"}}>{formula}</td></tr>
           ))}
         </tbody></table>
