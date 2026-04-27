@@ -3,8 +3,8 @@ import { loadData, saveData, subscribeData } from "./firebase.js";
 
 const USERS = [
   { id: "admin", username: "admin", password: "admin123", role: "admin", nama: "Administrator SIMKITA" },
-  { id: "op1", username: "operator1", password: "op123", role: "operator", nama: "Operator Bidang UMKM" },
-  { id: "op2", username: "operator2", password: "op456", role: "operator", nama: "Operator Bidang Koperasi" },
+  { id: "op1", username: "DiskopUMKM", password: "op123", role: "operator", nama: "DiskopUMKM" },
+  { id: "op2", username: "Pimpinan", password: "op456", role: "operator", nama: "Pimpinan DiskopUMKM" },
 ];
 
 const BULAN_LIST = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
