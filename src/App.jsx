@@ -561,7 +561,7 @@ function PanduanPage() {
         <div style={{padding:"13px 18px",background:"#1a4a8a",color:"#fff",fontSize:13,fontWeight:700}}>D. IKU — Dinas KUMKM Sultra 2026</div>
         <table><thead><tr><th>#</th><th>Indikator</th><th>Target</th><th>Formula</th></tr></thead>
         <tbody>
-          {[[1,"Rasio Volume Usaha Koperasi terhadap PDRB","0.80%","(∑ Vol. Usaha Koperasi ÷ ∑ PDRB Wilayah) × 100%"],[2,"Rasio Kewirausahaan","2.25%","(∑ Wirausahawan ÷ ∑ Penduduk Usia Produktif) × 100%"],[3,"Persentase Koperasi yang Berkualitas","70.00%","(∑ Koperasi RAT ÷ ∑ Total Koperasi) × 100%"],[4,"Persentase Usaha Kecil dari Informal ke Formal","5.00%","(∑ Usaha Kecil ber-NIB ÷ ∑ Total Usaha Kecil) × 100%"],[5,"Persentase Pertumbuhan Kewirausahaan","—","∑((Wirausaha Pemula + Mapan) ÷ ∑ Angkatan Kerja) × 100%"]].map(([no,ind,target,formula])=>(
+          {[[1,"Rasio Volume Usaha Koperasi terhadap PDRB","0.80%","(∑ Vol. Usaha Koperasi ÷ ∑ PDRB Wilayah) × 100%"],[2,"Rasio Kewirausahaan","2.25%","(∑ Wirausahawan ÷ ∑ Penduduk Usia Produktif) × 100%"],[3,"Persentase Koperasi yang Berkualitas","70.00%","(∑ Koperasi RAT ÷ ∑ Total Koperasi) × 100%"],[4,"Persentase Usaha Kecil dari Informal ke Formal","5.00%","(∑ Usaha Kecil ber-NIB ÷ ∑ Total Usaha Kecil) × 100%"],[5,"Persentase Pertumbuhan Kewirausahaan","—","(∑(Wirausaha Pemula + Mapan) ÷ ∑ Angkatan Kerja) × 100%"]].map(([no,ind,target,formula])=>(
             <tr key={no}><td style={{fontWeight:700,color:"#1a4a8a"}}>{no}</td><td style={{fontWeight:600,fontSize:12}}>{ind}</td><td style={{fontWeight:700,color:"#1e8449"}}>{target}</td><td style={{fontSize:11.5,color:"#64748b"}}>{formula}</td></tr>
           ))}
         </tbody></table>
